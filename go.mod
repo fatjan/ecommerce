@@ -1,19 +1,22 @@
-module ecommerce
+module myproject
 
-go 1.14
+go 1.13
 
 require (
+	github.com/alexsasharegan/dotenv v0.0.0-20171113213728-090a4d1b5d42
+	github.com/creasty/defaults v1.5.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
-	github.com/go-redis/redis v6.15.8+incompatible
+	github.com/go-bongo/bongo v0.10.4
+	github.com/go-playground/validator/v10 v10.3.0
 	github.com/go-sql-driver/mysql v1.5.0
+	github.com/google/wire v0.4.0
 	github.com/jinzhu/gorm v1.9.15
 	github.com/labstack/echo v3.3.10+incompatible
-	github.com/labstack/gommon v0.3.0 // indirect
-	github.com/lestrrat/go-file-rotatelogs v0.0.0-20180223000712-d3151e2a480f
-	github.com/lestrrat/go-strftime v0.0.0-20180220042222-ba3bf9c1d042 // indirect
-	github.com/rs/zerolog v1.19.0
-	github.com/spf13/cobra v1.0.0
-	github.com/spf13/viper v1.4.0
-	github.com/valyala/fasttemplate v1.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de // indirect
+	github.com/labstack/gommon v0.3.0
+	github.com/maxwellhealth/go-dotaccess v0.0.0-20190924013105-74ea4f4ca4eb // indirect
+	github.com/oleiade/reflections v1.0.0 // indirect
+	github.com/smartystreets/goconvey v1.6.4 // indirect
+	go.mongodb.org/mongo-driver v1.4.0
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22 // indirect
+	xorm.io/xorm v1.0.3
 )

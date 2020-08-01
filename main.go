@@ -1,23 +1,19 @@
 package main
 
 import (
-	// "database/sql"
-	// "fmt"
-
-	// _ "github.com/go-sql-driver/mysql"
-	"ecommerce/cmd"
+	"myproject/project/router"
 )
 
+// M map
+type M map[string]interface{}
+
 func main() {
-	// fmt.Println("My ecommerce project.")
-	// db, err := sql.Open("mysql", "root:password9@tcp(127.0.0.1:3306)/testdb")
 
-	// if err != nil {
-	// 	panic(err.Error())
-	// }
+	userConfig, _ := CreateUserConfig()
+	r := router.New()
+	v1 := r.Group("")
 
-	// defer db.Close()
+	userConfig.Register(v1)
 
-	// fmt.Println("Successfully connected to mysql database")
-	cmd.Execute()
+	r.Start(":" + "3133")
 }
