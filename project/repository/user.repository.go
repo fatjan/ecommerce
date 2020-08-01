@@ -19,9 +19,11 @@ type IUserConfigRepository interface {
 // UserConfigRepository : struct of User config repository
 type UserConfigRepository struct{}
 
+// ConnectDatabase is to make a connection to the database
 func ConnectDatabase() (*xorm.Engine, error) {
-
-	engine, err := xorm.NewEngine("mysql", "root:password9@/mydb?charset=utf8")
+	user := "user"
+	password := "password"
+	engine, err := xorm.NewEngine("mysql", user+":"+password+"@/mydb?charset=utf8")
 	err = engine.Sync2(new(entity.User))
 	if err != nil {
 		log.Println("Connection Failed to Open")
