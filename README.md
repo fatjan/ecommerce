@@ -9,32 +9,32 @@ Steps to try using the API from this project:
 
 url: http://localhost:3133
 
-Add user
-Endpoint: {{url}}/user
-Method: POST
-Body: 
-{
-    "ID": 1,
-    "Name": "Nama Pengguna",
-    "PhoneNumber": "089283873298",
-    "Email": "user@gmail.com"
-}
+Add user \
+Endpoint: {{url}}/user \
+Method: POST \
+Body: \
+{ \
+    "ID": 1, \
+    "Name": "Nama Pengguna", \
+    "PhoneNumber": "089283873298", \
+    "Email": "user@gmail.com" \
+} \
 
-Get user by id
-Endpoint: {{url}}/user/:user_id
-Method: GET
+Get user by id \
+Endpoint: {{url}}/user/:user_id \
+Method: GET \
 
-Update user by id
-Endpoint: {{url}}/user/:user_id
-Method: PUT
-Body: 
-{
-    "ID": 1,
-    "Name": "Nama Orang",
-    "PhoneNumber": "089283873298",
-    "Email": "orang@gmail.com"
-}
+Update user by id \
+Endpoint: {{url}}/user/:user_id \
+Method: PUT \
+Body: \
+{ \
+    "ID": 1, \
+    "Name": "Nama Orang", \
+    "PhoneNumber": "089283873298", \
+    "Email": "orang@gmail.com" \
+} \
 
-Delete user by id
-Endpoint: {{url}}/user/:user_id
-Method: DELETE
+Delete user by id \
+Endpoint: {{url}}/user/:user_id \
+Method: DELETE \
