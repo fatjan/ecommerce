@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	_ "database/sql"
 	"ecommerce/db"
+	"fmt"
 )
 
 type Employee struct {
@@ -39,8 +40,7 @@ func GetEmployee() Employees {
 		employee := Employee{}
 
 		err2 := rows.Scan(&employee.Id, &employee.Name, &employee.Salary,
-			&employee.Age, &employee.Gender, &employee.Status
-		)
+			&employee.Age, &employee.Gender, &employee.Status)
 
 		if err2 != nil {
 			fmt.Print(err2)

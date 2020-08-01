@@ -5,6 +5,7 @@ import (
 	_ "database/sql"
 	"net/http"
 	"strconv"
+	"ecommerce/db"
 
 	"github.com/labstack/echo"
 )
@@ -21,6 +22,8 @@ type Users struct {
 }
 
 var con *sql.DB
+
+func 
 
 func createUser(c echo.Context) error {
 	u := &user{

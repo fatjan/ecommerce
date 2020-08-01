@@ -1,6 +1,7 @@
 package main
 
 import (
+	ecommerceController "ecommerce/controllers"
 	"net/http"
 
 	"github.com/labstack/echo"
@@ -22,10 +23,11 @@ func main() {
 	})
 
 	// Routes
-	e.POST("/users", createUser)
-	e.GET("/users/:id", getUser)
-	e.PUT("/users/:id", updateUser)
-	e.DELETE("/users/:id", deleteUser)
+	e.GET("/employess", ecommerceController.GetEmployees())
+	e.POST("/users", ecommerceController.PostUser)
+	e.GET("/users/:id", ecommerceController.GetUsers)
+	e.PUT("/users/:id", ecommerceController.EditUser)
+	e.DELETE("/users/:id", ecommerceController.DeleteUser)
 
 	e.Logger.Fatal(e.Start(":8081"))
 }
