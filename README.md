@@ -18,11 +18,11 @@ Body: \
     "Name": "Nama Pengguna", \
     "PhoneNumber": "089283873298", \
     "Email": "user@gmail.com" \
-} \
+} 
 
 Get user by id \
 Endpoint: {{url}}/user/:user_id \
-Method: GET \
+Method: GET 
 
 Update user by id \
 Endpoint: {{url}}/user/:user_id \
@@ -33,8 +33,8 @@ Body: \
     "Name": "Nama Orang", \
     "PhoneNumber": "089283873298", \
     "Email": "orang@gmail.com" \
-} \
+} 
 
 Delete user by id \
 Endpoint: {{url}}/user/:user_id \
-Method: DELETE \
+Method: DELETE 
